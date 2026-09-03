@@ -1,0 +1,44 @@
+schema_version: 1
+snapshot:
+  name: v0.1.0
+  release_preparation_date: 2026-09-03
+  numerical_freeze_date: 2026-08-23
+  timezone: Europe/Berlin
+project:
+  type: theoretical_and_computational_physics
+  experimental_data: false
+units:
+  hbar: 1
+  k_B: 1
+  omega_0: 1
+parameters:
+  beta_hot: 0.6
+  gamma_hot: 1.0
+  beta_cold: 2.0
+  gamma_cold: 0.8
+  symmetric_switching: true
+  detuning: 0.0
+  independent_interrogation_time: 1.0
+  trajectory_measurement_interval: 1.0
+  drive_amplitudes: [0.0, 0.4, 0.8]
+trajectory_monte_carlo:
+  random_seed: 20260821
+  burn_in: 5000
+  retained_samples: 250000
+  batches: 25
+  samples_per_batch: 10000
+  switching_rate_min: 1.0
+  switching_rate_max: 10000.0
+  switching_rate_points: 21
+canonical_commands:
+  - python prereearch_switched_baths.py
+  - python second_round_driven_qubit.py
+  - python third_round_inference.py
+  - python fourth_round_detectability.py
+  - python fifth_round_trajectory_kl.py
+  - python sixth_round_first_order.py
+  - python plot_manuscript_figures.py
+disclosures:
+  - All numerical tables are program-generated theoretical data.
+  - The switching-device thermodynamic cost is outside the model.
+  - Omega=0.8 is a phenomenological strong-drive scan unless beyond-RWA validation is supplied.

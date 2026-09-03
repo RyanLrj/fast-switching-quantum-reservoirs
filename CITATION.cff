@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software or its data, please cite this release."
+title: "Fast-Switching Quantum Thermal Reservoirs: Code and Data"
+type: software
+authors:
+  - family-names: "Lyu"
+    given-names: "Ruijie"
+repository-code: "https://github.com/RyanLrj/fast-switching-quantum-reservoirs"
+version: 0.1.0
+date-released: 2026-09-03
+license: MIT
+keywords:
+  - open quantum systems
+  - quantum thermodynamics
+  - hidden Markov process
+  - Lindblad dynamics
+  - relative entropy

@@ -1,0 +1,28 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Reproduction logs
+provenance/logs/
+
+# LaTeX intermediates
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# The paper is maintained outside this code-and-data repository
+/manuscript/
+/paper/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*~
